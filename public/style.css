@@ -1,0 +1,67 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#chat-box {
+    position: relative;
+    border-radius: 20px;
+    width: 420px;
+    height: 420px;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+
+    #sent {
+        align-self: flex-end;
+        background-color: rgb(23, 23, 210);
+        color: white;
+    }
+
+    #received {
+        align-self: flex-start;
+        background-color: #c9c9c9;
+        color: black;
+    }
+
+    #sent,
+    #received {
+        max-width: 70%;
+        padding: 10px 15px;
+        border-radius: 20px;
+        word-wrap: break-word;
+        font-size: 14px;
+    }
+}
+
+#send {
+    display: flex;
+    gap: 10px;
+
+    input {
+        width: 300px;
+        padding: 10px 20px;
+        border-radius: 20px;
+        outline: none;
+        border: 1px solid rgb(94, 94, 94);
+    }
+
+    button {
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: 1px solid blue;
+        background-color: rgb(23, 23, 210);
+        color: white;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgb(4, 4, 248);
+        }
+    }
+}
